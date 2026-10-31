@@ -56,3 +56,36 @@ Alumna: **Sarai Sthefanie Soto López**
 - Tema personalizado en color violeta con soporte para modo oscuro
 
 ## 📂 Estructura
+
+app/
+└── dashboard/page.tsx # Página principal del dashboard
+components/
+├── ui/ # Componentes de shadcn/ui
+├── ConfirmDelete.tsx # Diálogo de confirmación
+├── DatePicker.tsx # Calendar + Popover
+├── FormErrors.tsx # Alert de validaciones
+├── OverviewSection.tsx # Menú Resumen
+├── PaginationBar.tsx # Pagination reutilizable
+├── ProjectForm.tsx # Crear y editar proyectos
+├── ProjectsSection.tsx # Menú Proyectos
+├── SettingsForm.tsx # Menú Configuración
+├── TasksTable.tsx # Menú Tareas
+└── TeamSection.tsx # Menú Equipo
+lib/
+└── store.tsx # Datos en memoria y lógica de negocio
+
+
+## 🛠️ Instalación y ejecución
+
+```bash
+git clone https://github.com/saraisoto-crypto/proyecto.git
+cd proyecto
+npm install
+npm run dev
+```
+
+Abrir en el navegador: **http://localhost:3000/dashboard**
+
+## 📝 Nota
+
+Los datos se guardan en memoria, así que al recargar la página vuelven a su estado inicial. Las peticiones al backend se simulan con un pequeño retraso para mostrar el Spinner.
