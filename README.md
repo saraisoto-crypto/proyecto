@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Dashboard de Proyectos — shadcn/ui
 
-## Getting Started
+Laboratorio **GLAB-S11 – Componentes y Estilización**
+Curso: **Desarrollo de Aplicaciones Web Avanzado** · Tecsup
+Docente: Edwin William Arévalo Sermeño
+Alumna: **Sarai Sthefanie Soto López**
 
-First, run the development server:
+🔗 **Demo en Vercel:** https://dashboard-shadcn-soto.vercel.app/dashboard
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tecnologías
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 16** con App Router y Turbopack
+- **React** y **TypeScript**
+- **Tailwind CSS v4**
+- **shadcn/ui** con Radix UI
+- **lucide-react** para íconos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Componentes de shadcn/ui utilizados
 
-## Learn More
+| Componente | Uso en el proyecto |
+|---|---|
+| **Spinner** | Simula peticiones al backend al cargar, guardar y eliminar |
+| **Alert** | Muestra validaciones de formularios y mensajes de éxito |
+| **Calendar** | Selección de fechas de entrega, nacimiento y fecha límite |
+| **Pagination** | Paginación de tareas y miembros del equipo |
+| Card, Tabs, Dialog, Select, Input, Label, Badge, Avatar, Switch, Table, Checkbox, Popover, Button | Estructura y formularios del dashboard |
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Funcionalidades
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📈 Resumen
+- Métricas calculadas en tiempo real con los datos en memoria
+- Tareas por estado, proyectos destacados y actividad reciente
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📁 Proyectos
+- Crear y editar proyectos con selección de miembros del equipo
+- Ver detalles: equipo, tareas, progreso y fecha de entrega
+- Eliminar proyectos con confirmación
 
-## Deploy on Vercel
+### 👥 Equipo
+- CRUD completo de miembros
+- Campos: `userId`, `role`, `name`, `email`, `position`, `birthdate`, `phone`, `projectId`, `isActive`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### ✅ Tareas
+- CRUD completo de tareas con paginación y filtro por estado
+- Campos: `description`, `projectId`, `status`, `priority`, `userId`, `dateline`
+- Marcar tareas como completadas desde la tabla
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ⚙️ Configuración
+- Formulario con organización, usuario, email, idioma y tareas por página
+- Modo oscuro, notificaciones y reporte semanal
+- Guardado simulado con Spinner y Alert de confirmación
+
+### 🎨 Tema
+- Tema personalizado en color violeta con soporte para modo oscuro
+
+## 📂 Estructura
